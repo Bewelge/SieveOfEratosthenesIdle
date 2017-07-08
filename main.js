@@ -579,7 +579,7 @@ function tick() {
   		if (price<=primePower) {
   			primePower-=price;
   			speedBought++;
-  			tickSpeed = Math.max(10,tickSpeed/2);
+  			tickSpeed = Math.max(1,tickSpeed/2);
   			document.getElementById("speedBut").innerHTML="Reduce Tick Speed - "+ Math.floor(Math.pow(100,1+(speedBought/10)))+"PP";
   		}
   }

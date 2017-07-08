@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href='interface.css'></style>
+  <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+  </head>
+  <body onload='init()'>
+    <div class='panel'  id='top'>
+     Sieve of Eratosthenes
+    </div>
+    <canvas id='BG'></canvas>
+    <div class='panel' id='canvases'>
+      <div id='canvasesInner'>
+    <canvas id='Sieve'></canvas>
+    <canvas id='Numbers'></canvas>
+    <canvas id='Selection'></canvas>
+    <canvas id='Effects'></canvas>
+    </div>
+    </div>
+    <div class='panel' id='primeNumbers'>
+      <h3>Prime Power <span id="PP"></span></h3>
+      <h3>Prime Numbers found: <span id="PN"></span></h3>
+      <h3>Highest Prime Number found: <span id="HPN"></span></h3>
+      <h3>Field Dimensions:<span id="FDM"></span></h3>
+    </div>
+    <div class='panel'  id='doingWhat'>Looking for next Prime Number</div>
+    <div class='panel' id='buttons'>
+      <h3><u>Upgrade Sieving</u></h3>
+      <div class='but' id='fieldBut' style='display:none' onclick='clickBoard(1)'>Increase Field Size by 1x1</div>
+      <div class='but' id='fieldBut' style='' onclick='clickBoardBig()'>Increase Field Size by 10x10 - <span id='bigFieldIncrPrice'></span></div>
+      <div class='but' id='speedBut'  onclick='clickSpeed()' >Reduce TickSpeed - 100PP</div>
+    </div>
+    
+
+  
+    <script src="main.js"></script>
+    <script src="quickSort.js"></script>
+  </body>
+</html>
